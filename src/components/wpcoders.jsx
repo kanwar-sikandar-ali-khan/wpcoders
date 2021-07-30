@@ -131,11 +131,11 @@ const Wpcoders = () => {
         <div className="row  justify-content-around">
           {card.map((v, i) => {
             return (
-              <div className="col-md-3  col-sm-12 card-div mt-3 ">
+              <div className="col-md-3 pt-5 align-items-center  col-sm-12 card-div mt-3 ">
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  accusantium consequatur repellat. Read More
+                  accusantium consequatur repellat.<div className="text-primary">Read More</div> 
                   <br />
                 </p>
               </div>
@@ -146,11 +146,11 @@ const Wpcoders = () => {
         <div className="row  justify-content-around mt-5">
           {card.map((v, i) => {
             return (
-              <div className="col-md-3  col-sm-12 card-div mt-3">
+              <div className="col-md-3 pt-5   col-sm-12 card-div mt-3">
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  accusantium consequatur repellat. Read More
+                  accusantium consequatur repellat. <div className="text-primary">Read More</div> 
                   <br />
                 </p>
               </div>
@@ -158,14 +158,14 @@ const Wpcoders = () => {
           })}
         </div>
 
-        <div className="row justify-content-around mt-5">
+        <div className="row justify-content-around  mt-5 ">
           {card.map((v, i) => {
             return (
-              <div className="col-md-3  col-sm-12 card-div mt-3 ">
+              <div className="col-md-3  pt-5  col-sm-12 card-div">
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  accusantium consequatur repellat. Read More
+                  accusantium consequatur repellat. <div className="text-primary">Read More</div> 
                   <br />
                 </p>
               </div>
