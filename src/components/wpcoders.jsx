@@ -125,9 +125,9 @@ const Wpcoders = () => {
         </div>
       </div>
 
-      <div className="container ">
+      <div className="container  bg-light py-5 ">
         <div className="row  justify-content-around">
-          <div className="col-md-3  col-sm-12 card-div">
+          <div className="col-md-3  col-sm-12 card-div ">
             <h3>GRAPHICS DESIGNING</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
