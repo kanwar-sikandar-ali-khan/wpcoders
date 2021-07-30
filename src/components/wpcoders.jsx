@@ -131,7 +131,7 @@ const Wpcoders = () => {
         <div className="row  justify-content-around">
           {card.map((v, i) => {
             return (
-              <div className="col-md-3  col-sm-12 card-div ">
+              <div className="col-md-3  col-sm-12 card-div mt-3 ">
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
@@ -146,7 +146,7 @@ const Wpcoders = () => {
         <div className="row  justify-content-around mt-5">
           {card.map((v, i) => {
             return (
-              <div className="col-md-3  col-sm-12 card-div ">
+              <div className="col-md-3  col-sm-12 card-div mt-3">
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
@@ -161,7 +161,7 @@ const Wpcoders = () => {
         <div className="row justify-content-around mt-5">
           {card.map((v, i) => {
             return (
-              <div className="col-md-3  col-sm-12 card-div ">
+              <div className="col-md-3  col-sm-12 card-div mt-3 ">
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
