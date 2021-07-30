@@ -12,8 +12,9 @@ const Wpcoders = () => {
           <div className="col-md-12 main-container pb-5">
             <div className="row">
               <div className="d-flex  justify-content-between col-md-12 mt-2  ">
-                <div className="" style={{ height: "150px", width: "150px" }}>
+                <div className="" style={{ height: "120px", width: "120px" }}>
                   <img
+                  style={{borderRadius:"25px"}}
                     height="100%"
                     width="100%"
                     src="https://image.shutterstock.com/image-vector/wp-letter-logo-design-template-260nw-717524956.jpg"
@@ -22,16 +23,16 @@ const Wpcoders = () => {
 
                 <div
                   className="d-flex justify-content-center align-items-center "
-                  style={{ height: "150px", width: "200px" }}
+                  style={{ height: "130px", width: "200px" }}
                 >
-                  <img height="50px" width="50px" src={listimg} />
+                  <img height="40px" width="40px" src={listimg} />
                 </div>
               </div>
             </div>
 
             <div className="row d-flex justify-content-center">
               <div className="col-sm-11 col-md-8 text-center mt-5 ">
-                <p style={{ fontSize: "20px", fontWeight: "bolder" }}>
+                <p style={{ fontSize: "20px", fontWeight: "bolder",fontFamily:"cursive" }}>
                   IT services refers to the application of business and
                   technical expertise to enable organizations in the creation,
                   management and optimization of or access to
@@ -39,7 +40,7 @@ const Wpcoders = () => {
               </div>
 
               <div
-                style={{ fontSize: "20px", fontWeight: "bold" }}
+                style={{ fontSize: "20px", fontWeight: "bold",fontFamily:"cursive" }}
                 className="col-sm-11  col-md-8 text-center mt-3"
               >
                 <p>
@@ -71,7 +72,7 @@ const Wpcoders = () => {
       <div className="container-fluid ">
         <div className="row">
           <div className="col-md-12 mt-3 px-5">
-            <h1 style={{ color: "blue" }}>About us</h1>
+            <h1 style={{ color: "blue" }}>ABOUT US</h1>
             <hr />
             <p>
               Brands are always seeking ways to get the right content in front
@@ -88,7 +89,7 @@ const Wpcoders = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-12 mt-3 px-5">
-            <h3 style={{ color: "#00BFFF" }}>COMPANY PHILOSPHY</h3>
+            <h3 style={{ color: "#00BFFF" }}>COMPANY PHILOSOPHY</h3>
             <hr />
             <p>
               Brands are always seeking ways to get the right content in front
@@ -120,7 +121,7 @@ const Wpcoders = () => {
         <div className="row">
           <div className="col-md-12  mt-5 px-5">
             <div>
-              <h1>Service we offer</h1>
+              <h1>SERVICE WE OFFER</h1>
               <hr />
             </div>
           </div>
@@ -147,7 +148,7 @@ const Wpcoders = () => {
         <div className="row  justify-content-around mt-5">
           {card.map((v, i) => {
             return (
-              <div className="col-md-3 pt-5   col-sm-12 card-div mt-3">
+              <div className="col-md-3 pt-5  col-sm-12 card-div mt-3">
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
