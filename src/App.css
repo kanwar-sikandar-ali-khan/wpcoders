@@ -55,13 +55,13 @@ th{
   margin-top: 100px;
 } */
 
-.inputfile {
+/* .inputfile {
   overflow: hidden;
   height: 0px;
   width: 0px;
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
-}
+} */
 
 /* header { */
 /* background: url('../src/images/banner.webp'); */
@@ -94,17 +94,15 @@ align-items: center; */
   background-repeat: no-repeat;
 }
 
-.imgDiv{
-  height:"120px";
-  width:'120px'
+.imgDiv {
+  height: "120px";
+  width: "120px";
 }
 
-.card-div{
-              border-radius:15px;
-              padding:10px 10px 20px 10px;
-              color:white;
-              background-color: black;
-              text-align: center;
-
-
+.card-div {
+  border-radius: 15px;
+  padding: 10px 10px 20px 10px;
+  color: white;
+  background-color: black;
+  text-align: center;
 }
