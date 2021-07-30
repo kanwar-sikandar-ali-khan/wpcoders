@@ -1,13 +1,15 @@
 import { borderColor, color } from "@material-ui/system";
 import React from "react";
 import listimg from "../asstes/Images/list.svg";
+import { useState } from "react";
 
 const Wpcoders = () => {
+  const [card, setCard] = useState([1, 2, 5]);
   return (
     <div>
       <div className="container-fluid  ">
         <div className="row">
-          <div  className="col-md-12 main-container pb-5">
+          <div className="col-md-12 main-container pb-5">
             <div className="row">
               <div className="d-flex  justify-content-between col-md-12 mt-2  ">
                 <div className="" style={{ height: "150px", width: "150px" }}>
@@ -127,103 +129,60 @@ const Wpcoders = () => {
 
       <div className="container  bg-light py-5 ">
         <div className="row  justify-content-around">
-          <div className="col-md-3  col-sm-12 card-div ">
-            <h3>GRAPHICS DESIGNING</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
-              accusantium consequatur repellat. Read More
-              <br />
-            </p>
-          </div>
-          <div className="col-md-3 col-sm-12 card-div">
-            <h3>GRAPHICS DESIGNING</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
-              accusantium consequatur repellat. Read More
-              <br />
-            </p>
-          </div>
-          <div className="col-md-3 col-xs-12 card-div ">
-            <h3>GRAPHICS DESIGNING</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
-              accusantium consequatur repellat. Read More
-              <br />
-            </p>
-          </div>
+          {card.map((v, i) => {
+            return (
+              <div className="col-md-3  col-sm-12 card-div ">
+                <h3>GRAPHICS DESIGNING</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                  nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+                  quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+                  accusantium consequatur repellat. Read More
+                  <br />
+                </p>
+              </div>
+            );
+          })}
+         
         </div>
 
-        <div className="row  justify-content-around mt-5">
-          <div className="col-md-3 col-sm-12 card-div">
-            <h3>GRAPHICS DESIGNING</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
-              accusantium consequatur repellat. Read More
-              <br />
-            </p>
-          </div>
-          <div className="col-md-3 col-sm-12 card-div">
-            <h3>GRAPHICS DESIGNING</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
-              accusantium consequatur repellat. Read More
-              <br />
-            </p>
-          </div>
-          <div className="col-md-3 col-xs-12 card-div">
-            <h3>GRAPHICS DESIGNING</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
-              accusantium consequatur repellat. Read More
-              <br />
-            </p>
-          </div>
-        </div>
+      <div className="row  justify-content-around mt-5">
 
-        <div className="row justify-content-around mt-5">
-          <div className="col-md-3 col-sm-12 card-div">
-            <h3>GRAPHICS DESIGNING</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
-              accusantium consequatur repellat. Read More
-              <br />
-            </p>
-          </div>
-          <div className="col-md-3 col-sm-12 card-div">
-            <h3>GRAPHICS DESIGNING</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
-              accusantium consequatur repellat. Read More
-              <br />
-            </p>
-          </div>
-          <div className="col-md-3 col-xs-12 card-div ">
-            <h3>GRAPHICS DESIGNING</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
-              accusantium consequatur repellat. Read More
-              <br />
-            </p>
-          </div>
-        </div>
+         {card.map((v, i) => {
+            return (
+              <div className="col-md-3  col-sm-12 card-div ">
+                <h3>GRAPHICS DESIGNING</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                  nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+                  quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+                  accusantium consequatur repellat. Read More
+                  <br />
+                </p>
+              </div>
+            );
+          })}
+          
+        </div> 
+
+         <div className="row justify-content-around mt-5">
+
+         {card.map((v, i) => {
+            return (
+              <div className="col-md-3  col-sm-12 card-div ">
+                <h3>GRAPHICS DESIGNING</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                  nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+                  quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+                  accusantium consequatur repellat. Read More
+                  <br />
+                </p>
+              </div>
+            );
+          })}
+         
+        </div> 
       </div>
     </div>
   );
