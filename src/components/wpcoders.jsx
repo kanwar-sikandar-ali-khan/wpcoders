@@ -135,54 +135,43 @@ const Wpcoders = () => {
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-                  quas quis sunt tempore sint maxime ipsam, obcaecati, ea
                   accusantium consequatur repellat. Read More
                   <br />
                 </p>
               </div>
             );
           })}
-         
         </div>
 
-      <div className="row  justify-content-around mt-5">
-
-         {card.map((v, i) => {
+        <div className="row  justify-content-around mt-5">
+          {card.map((v, i) => {
             return (
               <div className="col-md-3  col-sm-12 card-div ">
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-                  quas quis sunt tempore sint maxime ipsam, obcaecati, ea
                   accusantium consequatur repellat. Read More
                   <br />
                 </p>
               </div>
             );
           })}
-          
-        </div> 
+        </div>
 
-         <div className="row justify-content-around mt-5">
-
-         {card.map((v, i) => {
+        <div className="row justify-content-around mt-5">
+          {card.map((v, i) => {
             return (
               <div className="col-md-3  col-sm-12 card-div ">
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
-                  quas quis sunt tempore sint maxime ipsam, obcaecati, ea
                   accusantium consequatur repellat. Read More
                   <br />
                 </p>
               </div>
             );
           })}
-         
-        </div> 
+        </div>
       </div>
     </div>
   );
