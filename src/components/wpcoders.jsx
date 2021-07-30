@@ -9,7 +9,7 @@ const Wpcoders = () => {
         <div className="row">
           <div style={{ height: "500px" }} className="col-md-12 main-container">
             <div className="row">
-              <div className="d-flex  justify-content-between col-md-12 mt-2 ">
+              <div className="d-flex  justify-content-between col-md-12 mt-2  ">
                 <div className="" style={{ height: "150px", width: "150px" }}>
                   <img
                     height="100%"
@@ -86,7 +86,7 @@ const Wpcoders = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-12 mt-3 px-5">
-            <h3>COMPANY PHILOSPHY</h3>
+            <h3 style={{ color: "#00BFFF" }}>COMPANY PHILOSPHY</h3>
             <hr />
             <p>
               Brands are always seeking ways to get the right content in front
@@ -100,15 +100,15 @@ const Wpcoders = () => {
       </div>
 
       <div className="container-fluid">
-        <div className="row">
+        <div className="row d-flex justify-content-center">
           <div
             style={{ height: "300px", padding: "0px 45px 0px 45px" }}
-            className="col-md-12 "
+            className="col-md-10"
           >
             <img
               width="100%"
               height="100%"
-              src="https://images.unsplash.com/photo-1541359927273-d76820fc43f9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sbGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              src="https://images.unsplash.com/photo-1594383169997-250ec3fdd48d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80"
             ></img>
           </div>
         </div>
