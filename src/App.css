@@ -99,11 +99,12 @@ align-items: center; */
   width:'120px'
 }
 
-.main-card{
-  height: "200px";
-  border-radius: "15px";
-  padding:"10px 10px 10px 10px";
-  color:'white';
-  background-color:"black"
-  
+.card-div{
+              border-radius:15px;
+              padding:10px 10px 20px 10px;
+              color:white;
+              background-color: black;
+              text-align: center;
+
+
 }

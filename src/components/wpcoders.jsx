@@ -129,15 +129,8 @@ const Wpcoders = () => {
 
         <div className="row  justify-content-around">
           <div
-            style={{
-              
-              borderRadius: "15px",
-              padding: "10px 10px 20px 10px",
-              color: "white",
-              background: "black",
-              textAlign: "center",
-            }}
-            className="col-md-3  col-sm-12"
+      
+            className="col-md-3  col-sm-12 card-div"
           >
             <h3>GRAPHICS DESIGNING</h3>
             <p>
@@ -149,15 +142,8 @@ const Wpcoders = () => {
             </p>
           </div>
           <div
-            style={{
-            
-              borderRadius: "15px",
-              padding: "10px 10px 10px 10px",
-              color: "white",
-              background: "black",
-              textAlign: "center",
-            }}
-            className="col-md-3 col-sm-12"
+       
+            className="col-md-3 col-sm-12 card-div"
           >
             <h3>GRAPHICS DESIGNING</h3>
             <p>
@@ -169,15 +155,8 @@ const Wpcoders = () => {
             </p>
           </div>
           <div
-            style={{
-              
-              borderRadius: "15px",
-              padding: "10px 10px 10px 20px",
-              color: "white",
-              background: "black",
-              textAlign: "center",
-            }}
-            className="col-md-3 col-xs-12 "
+          
+            className="col-md-3 col-xs-12 card-div "
           >
             <h3>GRAPHICS DESIGNING</h3>
             <p>
@@ -192,15 +171,8 @@ const Wpcoders = () => {
 
         <div className="row  justify-content-around mt-5">
           <div
-            style={{
-             
-              borderRadius: "15px",
-              padding: "10px 10px 10px 10px",
-              color: "white",
-              background: "black",
-              textAlign: "center",
-            }}
-            className="col-md-3 col-sm-12"
+         
+            className="col-md-3 col-sm-12 card-div"
           >
             <h3>GRAPHICS DESIGNING</h3>
             <p>
@@ -212,15 +184,8 @@ const Wpcoders = () => {
             </p>
           </div>
           <div
-            style={{
-              
-              borderRadius: "15px",
-              padding: "10px 10px 10px 10px",
-              color: "white",
-              background: "black",
-              textAlign: "center",
-            }}
-            className="col-md-3 col-sm-12"
+        
+            className="col-md-3 col-sm-12 card-div"
           >
             <h3>GRAPHICS DESIGNING</h3>
             <p>
@@ -255,15 +220,8 @@ const Wpcoders = () => {
 
         <div className="row justify-content-around mt-5">
           <div
-            style={{
-          
-              borderRadius: "15px",
-              padding: "10px 10px 10px 10px",
-              color: "white",
-              background: "black",
-              textAlign: "center",
-            }}
-            className="col-md-3 col-sm-12"
+        
+            className="col-md-3 col-sm-12 card-div"
           >
             <h3>GRAPHICS DESIGNING</h3>
             <p>
@@ -275,15 +233,8 @@ const Wpcoders = () => {
             </p>
           </div>
           <div
-            style={{
-             
-              borderRadius: "15px",
-              padding: "10px 10px 10px 10px",
-              color: "white",
-              background: "black",
-              textAlign: "center",
-            }}
-            className="col-md-3 col-sm-12"
+      
+            className="col-md-3 col-sm-12 card-div"
           >
             <h3>GRAPHICS DESIGNING</h3>
             <p>
@@ -295,15 +246,8 @@ const Wpcoders = () => {
             </p>
           </div>
           <div
-            style={{
-           
-              borderRadius: "15px",
-              padding: "10px 10px 10px 20px",
-              color: "white",
-              background: "black",
-              textAlign: "center",
-            }}
-            className="col-md-3 col-xs-12 "
+       
+            className="col-md-3 col-xs-12 card-div "
           >
             <h3>GRAPHICS DESIGNING</h3>
             <p>
