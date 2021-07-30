@@ -7,13 +7,10 @@ const Wpcoders = () => {
     <div>
       <div className="container-fluid  ">
         <div className="row">
-          <div
-            style={{ height: "500px" }}
-            className="col-md-12   main-container"
-          >
+          <div style={{ height: "500px" }} className="col-md-12 main-container">
             <div className="row">
-              <div className="d-flex  justify-content-between col-md-12 ">
-                <div className="" style={{ height: "170px", width: "170px" }}>
+              <div className="d-flex  justify-content-between col-md-12 mt-2 ">
+                <div className="" style={{ height: "150px", width: "150px" }}>
                   <img
                     height="100%"
                     width="100%"
@@ -23,15 +20,15 @@ const Wpcoders = () => {
 
                 <div
                   className="d-flex justify-content-center align-items-center "
-                  style={{ height: "200px", width: "200px" }}
+                  style={{ height: "150px", width: "200px" }}
                 >
                   <img height="50px" width="50px" src={listimg} />
                 </div>
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-md-12 text-center mt-5">
+            <div className="row d-flex justify-content-center">
+              <div className="col-sm-12 col-md-8 text-center mt-5 ">
                 <p style={{ fontSize: "20px", fontWeight: "bolder" }}>
                   IT services refers to the application of business and
                   technical expertise to enable organizations in the creation,
@@ -41,10 +38,10 @@ const Wpcoders = () => {
 
               <div
                 style={{ fontSize: "20px", fontWeight: "bold" }}
-                className="col-md-12 text-center"
+                className="col-sm-12  col-md-8 text-center mt-3"
               >
                 <p>
-                  expertise to enable organizations in the creation, management
+                  Expertise to enable organizations in the creation, management
                   and optimization of or access to information and business
                   processes.
                 </p>
@@ -128,10 +125,7 @@ const Wpcoders = () => {
         </div>
 
         <div className="row  justify-content-around">
-          <div
-      
-            className="col-md-3  col-sm-12 card-div"
-          >
+          <div className="col-md-3  col-sm-12 card-div">
             <h3>GRAPHICS DESIGNING</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
@@ -141,10 +135,7 @@ const Wpcoders = () => {
               <br />
             </p>
           </div>
-          <div
-       
-            className="col-md-3 col-sm-12 card-div"
-          >
+          <div className="col-md-3 col-sm-12 card-div">
             <h3>GRAPHICS DESIGNING</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
@@ -154,10 +145,7 @@ const Wpcoders = () => {
               <br />
             </p>
           </div>
-          <div
-          
-            className="col-md-3 col-xs-12 card-div "
-          >
+          <div className="col-md-3 col-xs-12 card-div ">
             <h3>GRAPHICS DESIGNING</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
@@ -170,10 +158,7 @@ const Wpcoders = () => {
         </div>
 
         <div className="row  justify-content-around mt-5">
-          <div
-         
-            className="col-md-3 col-sm-12 card-div"
-          >
+          <div className="col-md-3 col-sm-12 card-div">
             <h3>GRAPHICS DESIGNING</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
@@ -183,10 +168,7 @@ const Wpcoders = () => {
               <br />
             </p>
           </div>
-          <div
-        
-            className="col-md-3 col-sm-12 card-div"
-          >
+          <div className="col-md-3 col-sm-12 card-div">
             <h3>GRAPHICS DESIGNING</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
@@ -198,7 +180,6 @@ const Wpcoders = () => {
           </div>
           <div
             style={{
-              
               borderRadius: "15px",
               padding: "10px 10px 10px 20px",
               color: "white",
@@ -219,10 +200,7 @@ const Wpcoders = () => {
         </div>
 
         <div className="row justify-content-around mt-5">
-          <div
-        
-            className="col-md-3 col-sm-12 card-div"
-          >
+          <div className="col-md-3 col-sm-12 card-div">
             <h3>GRAPHICS DESIGNING</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
@@ -232,10 +210,7 @@ const Wpcoders = () => {
               <br />
             </p>
           </div>
-          <div
-      
-            className="col-md-3 col-sm-12 card-div"
-          >
+          <div className="col-md-3 col-sm-12 card-div">
             <h3>GRAPHICS DESIGNING</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
@@ -245,10 +220,7 @@ const Wpcoders = () => {
               <br />
             </p>
           </div>
-          <div
-       
-            className="col-md-3 col-xs-12 card-div "
-          >
+          <div className="col-md-3 col-xs-12 card-div ">
             <h3>GRAPHICS DESIGNING</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
