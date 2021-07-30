@@ -117,216 +117,202 @@ const Wpcoders = () => {
         </div>
       </div>
 
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           <div className="col-md-12  mt-5">
             <div>
               <h1>Service we offer</h1>
               <hr />
             </div>
+          </div>
+        </div>
 
-            <div className="row">
-              <div style={{flexWrap:"wrap"}} className="col-md-12 d-flex justify-content-around">
-                <div
-                  style={{
-                    height: "200px",
-                    borderRadius: "15px",
-                    padding:"10px 10px 10px 10px",
-                    color:'white',
-                    background:"black"
-                  }}
-                  className="main-card col-md-3  "
-                >
-                  <h3>GRAPHICS DESIGNING</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eos nulla vero commodi eius rerum delectus laboriosam,
-                    magnam ipsa quas quis sunt tempore sint maxime ipsam,
-                    obcaecati, ea accusantium consequatur repellat.
-                    Read More
-                    <br/>
-                  </p>
-                
-                </div>
-                <div
-                  style={{
-                    height: "200px",
-                    borderRadius: "15px",
-                    padding:"10px 10px 10px 10px",
-                    color:'white',
-                    background:"black"
-                  }}
-                  className="main-card col-md-3  "
-                >
-                  <h3>GRAPHICS DESIGNING</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eos nulla vero commodi eius rerum delectus laboriosam,
-                    magnam ipsa quas quis sunt tempore sint maxime ipsam,
-                    obcaecati, ea accusantium consequatur repellat.
-                    Read More
-                    <br/>
-                  </p>
-                
-                </div>
-                <div
-                  style={{
-                    height: "200px",
-                    borderRadius: "15px",
-                    padding:"10px 10px 10px 10px",
-                    color:'white',
-                    background:"black"
-                  }}
-                  className="main-card col-md-3  "
-                >
-                  <h3>GRAPHICS DESIGNING</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eos nulla vero commodi eius rerum delectus laboriosam,
-                    magnam ipsa quas quis sunt tempore sint maxime ipsam,
-                    obcaecati, ea accusantium consequatur repellat.
-                    Read More
-                    <br/>
-                  </p>
-                
-                </div>
-                
-              </div>
+        <div className="row  justify-content-around">
+          <div
+            style={{
+              
+              borderRadius: "15px",
+              padding: "10px 10px 20px 10px",
+              color: "white",
+              background: "black",
+              textAlign: "center",
+            }}
+            className="col-md-3 a col-sm-12"
+          >
+            <h3>GRAPHICS DESIGNING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+              accusantium consequatur repellat. Read More
+              <br />
+            </p>
+          </div>
+          <div
+            style={{
+            
+              borderRadius: "15px",
+              padding: "10px 10px 10px 10px",
+              color: "white",
+              background: "black",
+              textAlign: "center",
+            }}
+            className="col-md-3 col-sm-12"
+          >
+            <h3>GRAPHICS DESIGNING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+              accusantium consequatur repellat. Read More
+              <br />
+            </p>
+          </div>
+          <div
+            style={{
+              
+              borderRadius: "15px",
+              padding: "10px 10px 10px 20px",
+              color: "white",
+              background: "black",
+              textAlign: "center",
+            }}
+            className="col-md-3 col-xs-12 "
+          >
+            <h3>GRAPHICS DESIGNING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+              accusantium consequatur repellat. Read More
+              <br />
+            </p>
+          </div>
+        </div>
 
-              <div style={{flexWrap:"wrap"}} className="col-md-12 d-flex justify-content-around mt-5">
-                <div
-                  style={{
-                    height: "200px",
-                    borderRadius: "15px",
-                    padding:"10px 10px 10px 10px",
-                    color:'white',
-                    background:"black"
-                  }}
-                  className="main-card col-md-3  "
-                >
-                  <h3>GRAPHICS DESIGNING</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eos nulla vero commodi eius rerum delectus laboriosam,
-                    magnam ipsa quas quis sunt tempore sint maxime ipsam,
-                    obcaecati, ea accusantium consequatur repellat.
-                    Read More
-                    <br/>
-                  </p>
-                
-                </div>
-                <div
-                  style={{
-                    height: "200px",
-                    borderRadius: "15px",
-                    padding:"10px 10px 10px 10px",
-                    color:'white',
-                    background:"black"
-                  }}
-                  className="main-card col-md-3  "
-                >
-                  <h3>GRAPHICS DESIGNING</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eos nulla vero commodi eius rerum delectus laboriosam,
-                    magnam ipsa quas quis sunt tempore sint maxime ipsam,
-                    obcaecati, ea accusantium consequatur repellat.
-                    Read More
-                    <br/>
-                  </p>
-                
-                </div>
-                <div
-                  style={{
-                    height: "200px",
-                    borderRadius: "15px",
-                    padding:"10px 10px 10px 10px",
-                    color:'white',
-                    background:"black"
-                  }}
-                  className="main-card col-md-3  "
-                >
-                  <h3>GRAPHICS DESIGNING</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eos nulla vero commodi eius rerum delectus laboriosam,
-                    magnam ipsa quas quis sunt tempore sint maxime ipsam,
-                    obcaecati, ea accusantium consequatur repellat.
-                    Read More
-                    <br/>
-                  </p>
-                
-                </div>
-                
-              </div>
+        <div className="row  justify-content-around mt-5">
+          <div
+            style={{
+             
+              borderRadius: "15px",
+              padding: "10px 10px 10px 10px",
+              color: "white",
+              background: "black",
+              textAlign: "center",
+            }}
+            className="col-md-3 col-sm-12"
+          >
+            <h3>GRAPHICS DESIGNING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+              accusantium consequatur repellat. Read More
+              <br />
+            </p>
+          </div>
+          <div
+            style={{
+              
+              borderRadius: "15px",
+              padding: "10px 10px 10px 10px",
+              color: "white",
+              background: "black",
+              textAlign: "center",
+            }}
+            className="col-md-3 col-sm-12"
+          >
+            <h3>GRAPHICS DESIGNING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+              accusantium consequatur repellat. Read More
+              <br />
+            </p>
+          </div>
+          <div
+            style={{
+              
+              borderRadius: "15px",
+              padding: "10px 10px 10px 20px",
+              color: "white",
+              background: "black",
+              textAlign: "center",
+            }}
+            className="col-md-3 col-xs-12 "
+          >
+            <h3>GRAPHICS DESIGNING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+              accusantium consequatur repellat. Read More
+              <br />
+            </p>
+          </div>
+        </div>
 
-              <div style={{flexWrap:"wrap"}} className="col-md-12 d-flex justify-content-around mt-5">
-                <div
-                  style={{
-                    height: "200px",
-                    borderRadius: "15px",
-                    padding:"10px 10px 10px 10px",
-                    color:'white',
-                    background:"black"
-                  }}
-                  className="main-card col-md-3  "
-                >
-                  <h3>GRAPHICS DESIGNING</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eos nulla vero commodi eius rerum delectus laboriosam,
-                    magnam ipsa quas quis sunt tempore sint maxime ipsam,
-                    obcaecati, ea accusantium consequatur repellat.
-                    Read More
-                    <br/>
-                  </p>
-                
-                </div>
-                <div
-                  style={{
-                    height: "200px",
-                    borderRadius: "15px",
-                    padding:"10px 10px 10px 10px",
-                    color:'white',
-                    background:"black"
-                  }}
-                  className="main-card col-md-3  "
-                >
-                  <h3>GRAPHICS DESIGNING</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eos nulla vero commodi eius rerum delectus laboriosam,
-                    magnam ipsa quas quis sunt tempore sint maxime ipsam,
-                    obcaecati, ea accusantium consequatur repellat.
-                    Read More
-                    <br/>
-                  </p>
-                
-                </div>
-                <div
-                  style={{
-                    height: "200px",
-                    borderRadius: "15px",
-                    padding:"10px 10px 10px 10px",
-                    color:'white',
-                    background:"black"
-                  }}
-                  className="main-card col-md-3  "
-                >
-                  <h3>GRAPHICS DESIGNING</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eos nulla vero commodi eius rerum delectus laboriosam,
-                    magnam ipsa quas quis sunt tempore sint maxime ipsam,
-                    obcaecati, ea accusantium consequatur repellat.
-                    Read More
-                    <br/>
-                  </p>
-                
-                </div>
-                
-              </div>
-            </div>
+        <div className="row justify-content-around mt-5">
+          <div
+            style={{
+          
+              borderRadius: "15px",
+              padding: "10px 10px 10px 10px",
+              color: "white",
+              background: "black",
+              textAlign: "center",
+            }}
+            className="col-md-3 col-sm-12"
+          >
+            <h3>GRAPHICS DESIGNING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+              accusantium consequatur repellat. Read More
+              <br />
+            </p>
+          </div>
+          <div
+            style={{
+             
+              borderRadius: "15px",
+              padding: "10px 10px 10px 10px",
+              color: "white",
+              background: "black",
+              textAlign: "center",
+            }}
+            className="col-md-3 col-sm-12"
+          >
+            <h3>GRAPHICS DESIGNING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+              accusantium consequatur repellat. Read More
+              <br />
+            </p>
+          </div>
+          <div
+            style={{
+           
+              borderRadius: "15px",
+              padding: "10px 10px 10px 20px",
+              color: "white",
+              background: "black",
+              textAlign: "center",
+            }}
+            className="col-md-3 col-xs-12 "
+          >
+            <h3>GRAPHICS DESIGNING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+              nulla vero commodi eius rerum delectus laboriosam, magnam ipsa
+              quas quis sunt tempore sint maxime ipsam, obcaecati, ea
+              accusantium consequatur repellat. Read More
+              <br />
+            </p>
           </div>
         </div>
       </div>
