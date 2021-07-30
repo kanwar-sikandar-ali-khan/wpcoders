@@ -30,7 +30,7 @@ const Wpcoders = () => {
             </div>
 
             <div className="row d-flex justify-content-center">
-              <div className="col-sm-12 col-md-8 text-center mt-5 ">
+              <div className="col-sm-11 col-md-8 text-center mt-5 ">
                 <p style={{ fontSize: "20px", fontWeight: "bolder" }}>
                   IT services refers to the application of business and
                   technical expertise to enable organizations in the creation,
@@ -40,7 +40,7 @@ const Wpcoders = () => {
 
               <div
                 style={{ fontSize: "20px", fontWeight: "bold" }}
-                className="col-sm-12  col-md-8 text-center mt-3"
+                className="col-sm-11  col-md-8 text-center mt-3"
               >
                 <p>
                   Expertise to enable organizations in the creation, management
@@ -135,7 +135,8 @@ const Wpcoders = () => {
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  accusantium consequatur repellat.<div className="text-primary">Read More</div> 
+                  accusantium consequatur repellat.
+                  <div className="text-primary">Read More</div>
                   <br />
                 </p>
               </div>
@@ -150,7 +151,8 @@ const Wpcoders = () => {
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  accusantium consequatur repellat. <div className="text-primary">Read More</div> 
+                  accusantium consequatur repellat.{" "}
+                  <div className="text-primary">Read More</div>
                   <br />
                 </p>
               </div>
@@ -161,11 +163,12 @@ const Wpcoders = () => {
         <div className="row justify-content-around  mt-5 ">
           {card.map((v, i) => {
             return (
-              <div className="col-md-3  pt-5  col-sm-12 card-div">
+              <div className="col-md-3  pt-5  col-sm-12 card-div mt-3">
                 <h3>GRAPHICS DESIGNING</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  accusantium consequatur repellat. <div className="text-primary">Read More</div> 
+                  accusantium consequatur repellat.{" "}
+                  <div className="text-primary">Read More</div>
                   <br />
                 </p>
               </div>
