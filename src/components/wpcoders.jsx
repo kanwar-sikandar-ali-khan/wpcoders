@@ -114,16 +114,18 @@ const Wpcoders = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-md-12  mt-5">
+          <div className="col-md-12  mt-5 px-5">
             <div>
               <h1>Service we offer</h1>
               <hr />
             </div>
           </div>
         </div>
+      </div>
 
+      <div className="container ">
         <div className="row  justify-content-around">
           <div className="col-md-3  col-sm-12 card-div">
             <h3>GRAPHICS DESIGNING</h3>
@@ -178,16 +180,7 @@ const Wpcoders = () => {
               <br />
             </p>
           </div>
-          <div
-            style={{
-              borderRadius: "15px",
-              padding: "10px 10px 10px 20px",
-              color: "white",
-              background: "black",
-              textAlign: "center",
-            }}
-            className="col-md-3 col-xs-12 "
-          >
+          <div className="col-md-3 col-xs-12 card-div">
             <h3>GRAPHICS DESIGNING</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
