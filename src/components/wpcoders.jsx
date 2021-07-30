@@ -66,9 +66,9 @@ const Wpcoders = () => {
         </div>
       </div> */}
 
-      <div className="container-fluid">
+      <div className="container-fluid ">
         <div className="row">
-          <div className="col-md-12 mt-3">
+          <div className="col-md-12 mt-3 px-5">
             <h1 style={{ color: "blue" }}>About us</h1>
             <hr />
             <p>
@@ -85,7 +85,7 @@ const Wpcoders = () => {
 
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-12 mt-3">
+          <div className="col-md-12 mt-3 px-5">
             <h3>COMPANY PHILOSPHY</h3>
             <hr />
             <p>
