@@ -7,7 +7,7 @@ const Wpcoders = () => {
     <div>
       <div className="container-fluid  ">
         <div className="row">
-          <div style={{ height: "500px" }} className="col-md-12 main-container">
+          <div  className="col-md-12 main-container pb-5">
             <div className="row">
               <div className="d-flex  justify-content-between col-md-12 mt-2  ">
                 <div className="" style={{ height: "150px", width: "150px" }}>
