@@ -137,7 +137,7 @@ const Wpcoders = () => {
               background: "black",
               textAlign: "center",
             }}
-            className="col-md-3 a col-sm-12"
+            className="col-md-3  col-sm-12"
           >
             <h3>GRAPHICS DESIGNING</h3>
             <p>
