@@ -2,182 +2,571 @@ import { borderColor, color } from "@material-ui/system";
 import React from "react";
 import listimg from "../asstes/Images/list.svg";
 import { useState } from "react";
+import WPLOGO from "../../src/asstes/Images/WPLOGO.png";
+import wpAbout from "../../src/asstes/Images/wpAbout.png";
+import { FaListUl } from "react-icons/fa";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import anim from "../../src/wpAsstes/images/anim.png";
+import appdev from "../../src/wpAsstes/images/appdev.png";
+import cont from "../../src/wpAsstes/images/cont.png";
+import dig from "../../src/wpAsstes/images/dig.png";
+import graph from "../../src/wpAsstes/images/graph.png";
+import serch from "../../src/wpAsstes/images/serch.png";
+import social from "../../src/wpAsstes/images/social.png";
+import web from "../../src/wpAsstes/images/web.png";
+
+const BorderLinearProgress = withStyles((theme) => ({
+  root: {
+    height: 2,
+    borderRadius: 5,
+  },
+  colorPrimary: {
+    backgroundColor:
+      theme.palette.grey[theme.palette.type === "light" ? 200 : 700],
+  },
+  bar: {
+    borderRadius: 5,
+    backgroundColor: "#1a90ff",
+  },
+}))(LinearProgress);
+
+// Inspired by the former Facebook spinners.
+const useStylesFacebook = makeStyles((theme) => ({
+  root: {
+    position: "relative",
+  },
+  bottom: {
+    color: theme.palette.grey[theme.palette.type === "light" ? 200 : 700],
+  },
+  top: {
+    color: "#1a90ff",
+    animationDuration: "550ms",
+    position: "absolute",
+    left: 0,
+  },
+  circle: {
+    strokeLinecap: "round",
+  },
+}));
+
+function FacebookCircularProgress(props) {
+  const classes = useStylesFacebook();
+
+  return (
+    <div className={classes.root}>
+      <CircularProgress
+        variant="determinate"
+        className={classes.bottom}
+        size={40}
+        thickness={4}
+        {...props}
+        value={100}
+      />
+      <CircularProgress
+        variant="indeterminate"
+        disableShrink
+        className={classes.top}
+        classes={{
+          circle: classes.circle,
+        }}
+        size={40}
+        thickness={4}
+        {...props}
+      />
+    </div>
+  );
+}
+
+const useStyles = makeStyles({
+  root: {
+    flexGrow: 1,
+  },
+});
 
 const Wpcoders = () => {
+  const classes = useStyles();
   const [card, setCard] = useState([1, 2, 5]);
+
+  const [cardRow1, setCardRow1] = useState([
+    {
+      heading: "Graphic Designing ",
+
+      wording: `We believe that creativity has the power to
+ transform.Our constant effort to let our clients
+ climb their way to the top helps us in creating
+ impactful brands. We can generate aesthetically
+ pleasing and desirable design ideas for your
+ brand. Our unique and impactful designs can
+ accurately articulate your company’s vision`,
+
+      number: "01",
+      img: graph,
+    },
+
+    {
+      heading: "Video Animation",
+
+      wording: `We consider video marketing the most effective  part
+of every successful marketing strategy. Our expert
+designers and video makers have the ability to
+create videos that guarantee positive ROI. Our videos
+have the potential to grab the attention of your target
+audience. We have been providing flawless work by
+actively focusing the specifics of the project`,
+
+      number: "02",
+      img: anim,
+    },
+
+    {
+      heading: "Social Media Management",
+
+      wording: `we know that strategic approach and transparency
+are the most effective factors necessary for 
+the success of every social Media campaign.
+we are here to ensure engaging social Media 
+campaigns for your brand. our ability to conduct
+meticulous and result-oriented split tests can 
+help you in achieving expected sales goals.`,
+
+      number: "03",
+      img: social,
+    },
+
+    {
+      heading: `Web Design
+      & Development `,
+
+      wording: `WP Coders has an exceptional and well-
+      equipped team of proficient web developers
+      and designers. There is no doubt that the forward
+      -thinking of our team has made us one of the
+      leading web-designing and development 
+      companies`,
+
+      number: "04",
+
+      img: web,
+    },
+
+    {
+      heading: "Mobile App Development ",
+
+      wording: `Our ultimate goal is to solve world’s most
+      complicated products with technology. We have
+      an entire team of experts to validate your
+      product idea, get rid of hurdles, and charting a
+      proper roadmap to ensure end-to-end and
+      scalable customized products`,
+
+      number: "05",
+      img: appdev,
+    },
+
+    {
+      heading: "Digital Marketing ",
+
+      wording: `With our deep roots in paid marketing, we can
+      ensure scalable, measurable, and predictable
+      results to you. Our seasoned and well-skilled
+      marketers create strategy that drives growth. So
+      whenever you need a clear, well-executed, and
+      exceptionally crafted marketing plan for your
+      brand, you can rely on our creative and innovative
+      team
+      .`,
+
+      number: "06",
+      img: dig,
+    },
+
+    {
+      heading: `Content Management`,
+
+      wording: `Content marketing is certainly a very significant
+      aspects of every successful online strategy. We
+      focus in creating SEO optimized content for all
+      your digital media platforms. Producing high-
+      quality and unique content at an unmatchable
+      scale is our primary goal. Our network of
+      proficient and specialized content writers can
+      create engaging content for your brand`,
+
+      number: "07",
+      img: cont,
+    },
+
+    {
+      heading: "Serach Engine Optimization",
+
+      wording: `Getting top ranks on the Google search engine is
+      not as simple as it seems. Only with experienced
+      and capable team, we have been able to bring
+      traffic for our clients. Our SEO strategies can out
+      -weigh your competitors’ tactics and let you grab
+      the attention of your target-audience`,
+
+      number: "08",
+      img: serch,
+    },
+  ]);
+
   return (
-    <div>
-      <div className="container-fluid  ">
-        <div className="row">
-          <div className="col-md-12 main-container pb-5">
-            <div className="row">
-              <div className="d-flex  justify-content-between col-md-12 mt-2  ">
-                <div className="" style={{ height: "120px", width: "120px" }}>
-                  <img
-                  style={{borderRadius:"25px"}}
-                    height="100%"
-                    width="100%"
-                    src="https://image.shutterstock.com/image-vector/wp-letter-logo-design-template-260nw-717524956.jpg"
-                  />
+    <>
+      <div>
+        <div className="container-fluid">
+          <div className="row">
+            <div
+              style={{ paddingBottom: "90px" }}
+              className="col-md-12 main-container"
+            >
+              <div className="row">
+                <div className="d-flex  justify-content-between col-md-12 mt-2  ">
+                  <div className="" style={{ height: "120px", width: "300px" }}>
+                    <img
+                      style={{ borderRadius: "25px" }}
+                      height="100%"
+                      width="100%"
+                      src={WPLOGO}
+                    />
+                  </div>
+
+                  <div
+                    className="d-flex justify-content-center align-items-center"
+                    style={{ height: "120px", width: "200px" }}
+                  >
+                    <FaListUl size="35px" color="white" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="row d-flex justify-content-center">
+                <div className="col-sm-11 col-md-8 text-center mt-5">
+                  <p
+                    style={{
+                      fontSize: "50px",
+                      fontWeight: "bold",
+                      color: "white",
+                    }}
+                    className="slideFirstLine"
+                  >
+                    Your full-Service IT Partner For The
+                    <br /> Most Complex Problems
+                  </p>
                 </div>
 
                 <div
-                  className="d-flex justify-content-center align-items-center "
-                  style={{ height: "130px", width: "200px" }}
+                  style={{
+                    fontSize: "20px",
+
+                    color: "white",
+                  }}
+                  className="col-sm-12  col-md-5 text-center mt-3"
                 >
-                  <img height="40px" width="40px" src={listimg} />
+                  <p>
+                    Accelerating businesses' growth by offering digital
+                    marketing
+                    <br /> and IT solutions engineered for excellence
+                  </p>
+                </div>
+                <div className="col-md-12 text-center mt-4">
+                  <button type="button" className="btn btn-primary">
+                    LET’S GET STARTED
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div className="row d-flex justify-content-center">
-              <div className="col-sm-11 col-md-8 text-center mt-5 ">
-                <p style={{ fontSize: "20px", fontWeight: "bolder",fontFamily:"cursive" }}>
-                  IT services refers to the application of business and
-                  technical expertise to enable organizations in the creation,
-                  management and optimization of or access to
-                </p>
-              </div>
-
-              <div
-                style={{ fontSize: "20px", fontWeight: "bold",fontFamily:"cursive" }}
-                className="col-sm-11  col-md-8 text-center mt-3"
+        <div className="container-fluid">
+          <div className="row">
+            <div
+              style={{ marginTop: "80px" }}
+              className="col-md-12 d-flex justify-content-center"
+            >
+              <p
+                style={{
+                  fontSize: "30px",
+                  fontWeight: "bold",
+                  textDecoration: "underline",
+                  color: "#00008B",
+                }}
               >
-                <p>
-                  Expertise to enable organizations in the creation, management
-                  and optimization of or access to information and business
-                  processes.
-                </p>
+                Let’s Work Together!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid">
+          <div className="row">
+            <div style={{ padding: "0px 30px 0px 40px" }} className="col-md-6">
+              <div
+                className="row  d-flex justify-content-between px-3 mt-2"
+                style={{}}
+              >
+                <div className="col-xs-11 ">
+                  <p>Marketing</p>
+                </div>
+                <div className="col-xs-1 ">
+                  <p>65%</p>
+                </div>
               </div>
-              <div className="col-md-12 text-center">
-                <button type="button" class="btn btn-primary">
-                  LETS GET STARTED
-                </button>
+
+              <div className="row ">
+                <div className="col-md-12">
+                  <div className={classes.root}>
+                    <BorderLinearProgress variant="determinate" value={65} />
+                  </div>
+                </div>
+              </div>
+              <div className="row  d-flex justify-content-between px-3 mt-2">
+                <div className="col-xs-11 ">
+                  <p>Branding</p>
+                </div>
+                <div className="col-xs-1 ">
+                  <p>85%</p>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-12">
+                  <div className={classes.root}>
+                    <BorderLinearProgress variant="determinate" value={85} />
+                  </div>
+                </div>
+              </div>
+              <div className="row  d-flex justify-content-between px-3 mt-2">
+                <div className="col-xs-11 ">
+                  <p>Search Engine Optimization</p>
+                </div>
+                <div className="col-xs-1 ">
+                  <p>92%</p>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-12">
+                  <div className={classes.root}>
+                    <BorderLinearProgress variant="determinate" value={92} />
+                  </div>
+                </div>
+              </div>
+              <div className="row  d-flex justify-content-between px-3 mt-2">
+                <div className="col-xs-11 ">
+                  <p>Paid Advertising </p>
+                </div>
+                <div className="col-xs-1 ">
+                  <p>85%</p>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-12">
+                  <div className={classes.root}>
+                    <BorderLinearProgress variant="determinate" value={85} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{ padding: "0px 30px 0px 40px" }} className="col-md-6 ">
+              <div
+                className="row  d-flex justify-content-between px-3 mt-2"
+                style={{}}
+              >
+                <div className="col-xs-11 ">
+                  <p>Product Development </p>
+                </div>
+                <div className="col-xs-1 ">
+                  <p>55%</p>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-12">
+                  <div className={classes.root}>
+                    <BorderLinearProgress variant="determinate" value={55} />
+                  </div>
+                </div>
+              </div>
+              <div className="row  d-flex justify-content-between px-3 mt-2">
+                <div className="col-xs-11 ">
+                  <p>Application Development</p>
+                </div>
+                <div className="col-xs-1 ">
+                  <p>85%</p>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-12">
+                  <div className={classes.root}>
+                    <BorderLinearProgress variant="determinate" value={85} />
+                  </div>
+                </div>
+              </div>
+              <div className="row  d-flex justify-content-between px-3 mt-2">
+                <div className="col-xs-11 ">
+                  <p>Software Development</p>
+                </div>
+                <div className="col-xs-1 ">
+                  <p>95%</p>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-12">
+                  <div className={classes.root}>
+                    <BorderLinearProgress variant="determinate" value={95} />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row  d-flex justify-content-between px-3 mt-2"
+                style={{}}
+              >
+                <div className="col-xs-11 ">
+                  <p>Consulting</p>
+                </div>
+                <div className="col-xs-1 ">
+                  <p>89%</p>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-12">
+                  <div className={classes.root}>
+                    <BorderLinearProgress variant="determinate" value={89} />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-12 d-flex justify-content-center mt-5">
-            <p style={{ fontSize: "20px", fontWeight: "bold" }}>
-              LETS WORK TOGETHER
-            </p>
-          </div>
-        </div>
-      </div> */}
-
-      <div className="container-fluid ">
-        <div className="row">
-          <div className="col-md-12 mt-3 px-5">
-            <h1 style={{ color: "blue" }}>ABOUT US</h1>
-            <hr />
-            <p>
-              Brands are always seeking ways to get the right content in front
-              of their customers. But, with the escalation of digital
-              touchpoints throughout the customer journey, it can be challenging
-              to manage and deliver content to multiple channels effectively.
-              touchpoints throughout the customer journey, it can be challenging
-              to manage and deliver content to multiple channels effectively.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-12 mt-3 px-5">
-            <h3 style={{ color: "#00BFFF" }}>COMPANY PHILOSOPHY</h3>
-            <hr />
-            <p>
-              Brands are always seeking ways to get the right content in front
-              of their customers. But, with the escalation of digital
-              touchpoints throughout the customer journey, it can be challenging
-              to manage and deliver to manage and deliver content to multiple
-              channels effectively.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="container-fluid">
-        <div className="row d-flex justify-content-center">
-          <div
-            style={{ height: "300px", padding: "0px 45px 0px 45px" }}
-            className="col-md-10"
-          >
-            <img
-              width="100%"
-              height="100%"
-              src="https://images.unsplash.com/photo-1594383169997-250ec3fdd48d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80"
-            ></img>
-          </div>
-        </div>
-      </div>
-
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-12  mt-5 px-5">
-            <div>
-              <h1>SERVICE WE OFFER</h1>
+        <div style={{ marginTop: "60px" }} className="container-fluid ">
+          <div className="row">
+            <div className="col-md-12 mt-3 px-5">
+              <h1 style={{ color: "#00008B" }}>ABOUT US</h1>
               <hr />
+              <p style={{ fontSize: "18px", color: "" }}>
+                WP Coders is a leading and rapidly growing IT Company that came
+                into existence in 2019. Our company has achieved great things
+                within a short span of time. Our clients all over the globe are
+                now benefiting from our services. We are catering clients from
+                different regions and parts of the world including UAE, USA,
+                Canada, UK etc. Our strong and skilled team has enabled us to
+                compete with huge and pre-existing IT giants. We can say that
+                the credit for making us stand out in the world of IT goes to
+                our team
+              </p>
             </div>
           </div>
         </div>
+
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12 mt-3 px-5">
+              <h3 style={{ color: "#00BFFF" }}>COMPANY PHILOSOPHY</h3>
+              <hr />
+              <p>
+                Our passion is the main force that drives us into performing
+                well for Abtach. We love what we do and that’s why, we’ve
+                strengthened our ties with IT enthusiasts who are genuinely
+                committed to take this company to the peak of its success. We
+                believe in respecting our people’s rights and privacy and that
+                leads us into ensuring a win-win situation for our company and
+                its people
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid">
+          <div className="row d-flex justify-content-center">
+            <div
+              style={{
+                height: "420px",
+                padding: "0px 45px 0px 45px",
+                backgroundImage: `url(${wpAbout})`,
+                backgroundSize: "cover",
+              }}
+              className="col-md-10"
+            >
+              {/* <img width="100%" height="100%" src={wpAbout}></img> */}
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid bg-light mt-5">
+          <div className="row">
+            <div className="col-md-12  mt-5 px-5">
+              <div>
+                <h1 style={{ color: "#00008B" }}>Services We Offer</h1>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-light pb-5 pt-2">
+          <div
+            style={{ flexWrap: "wrap", justifyContent: "center" }}
+            className="d-flex"
+          >
+            {cardRow1.map((v, i) => {
+              return (
+                <div className="px-3" style={{}}>
+                  <div
+                    className="card-div pt-3"
+                    style={{
+                      width: "500px",
+                      backgroundImage: `url(${v.img})`,
+                      backgroundSize: "cover",
+                      marginTop: "35px",
+                    }}
+                  >
+                    <div
+                      className="d-flex"
+                      style={{
+                        flexDirection: "column",
+
+                        height: "270px",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <div>
+                        <h3>{v.heading}</h3>
+                        <p>{v.wording}</p>
+                      </div>
+
+                      <div
+                        className="d-flex pr-4"
+                        style={{
+                          justifyContent: "space-between",
+                          alignItems: "flex-end",
+                        }}
+                      >
+                        <div>
+                          <p>Read More</p>
+                        </div>
+
+                        <div>
+                          <p style={{ fontSize: "18px" }}>{v.number}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-
-      <div className="container  bg-light py-5 ">
-        <div className="row  justify-content-around">
-          {card.map((v, i) => {
-            return (
-              <div className="col-md-3 pt-5 align-items-center  col-sm-12 card-div mt-3 ">
-                <h3>GRAPHICS DESIGNING</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  accusantium consequatur repellat.
-                  <div className="text-primary">Read More</div>
-                  <br />
-                </p>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="row  justify-content-around mt-5">
-          {card.map((v, i) => {
-            return (
-              <div className="col-md-3 pt-5  col-sm-12 card-div mt-3">
-                <h3>GRAPHICS DESIGNING</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  accusantium consequatur repellat.{" "}
-                  <div className="text-primary">Read More</div>
-                  <br />
-                </p>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="row justify-content-around  mt-5 ">
-          {card.map((v, i) => {
-            return (
-              <div className="col-md-3  pt-5  col-sm-12 card-div mt-3">
-                <h3>GRAPHICS DESIGNING</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  accusantium consequatur repellat.{" "}
-                  <div className="text-primary">Read More</div>
-                  <br />
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 
